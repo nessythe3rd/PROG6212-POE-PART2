@@ -11,7 +11,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #d6d6d2;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -19,42 +19,56 @@ body {
 h1 {
     color: #2c3e50;
     text-align: center;
+    margin: 20px 0;
 }
 
 form {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
     form div {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     form label {
         display: block;
         font-weight: bold;
         color: #34495e;
+        margin-bottom: 5px;
     }
 
     form input, form select {
         width: 100%;
-        padding: 10px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
         font-size: 16px;
     }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #e74c3c;
     border: none;
+    border-radius: 4px;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
     button:hover {
         background-color: #c0392b;
+        transform: translateY(-2px);
+    }
+
+    button:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
     }
